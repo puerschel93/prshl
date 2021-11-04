@@ -21,6 +21,8 @@
     "react-qr-code": "^2.0.1",
     "react-scripts": "4.0.3",
     "react-tilt": "^0.1.4",
+    "styled-components": "^5.3.3",
+    "styled-system": "^5.1.5",
     "yarn": "^1.22.10"
   },
   "scripts": {

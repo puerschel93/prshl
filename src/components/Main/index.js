@@ -1,5 +1,11 @@
+import Text from "system/text";
+
 const Main = () => {
-  return <p>Integral Mafia</p>;
+  return (
+    <Text fontSize="105px" bg="blue">
+      Beans
+    </Text>
+  );
 };
 
 export default Main;
