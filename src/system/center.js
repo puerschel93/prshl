@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, layout } from "styled-system";
+import { color, layout, flexbox, position, space } from "styled-system";
 
 const Center = styled.div`
   display: flex;
@@ -8,6 +8,9 @@ const Center = styled.div`
   align-items: center;
   ${color}
   ${layout}
+  ${flexbox}
+  ${position}
+  ${space}
 `;
 
 export default Center;

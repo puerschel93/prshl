@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { fontSize } from "styled-system";
+import { position, color, fontSize } from "styled-system";
 
-const Text = styled.p(fontSize);
+const Text = styled.p(fontSize, color, position);
 
 export default Text;

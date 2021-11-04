@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import IntegralCF from "./fonts/IntegralCF-Heavy.woff";
 import IntegralCF2 from "./fonts/IntegralCF-Heavy.woff2";
+import theme from "./theme";
 
 const Global = createGlobalStyle`
 	@font-face {
@@ -14,6 +15,10 @@ const Global = createGlobalStyle`
 		padding: 0;
 		box-sizing: border-box;
 		font-family: 'Integral', sans-serif;
+	}
+
+	*::selection {
+		background-color: black;
 	}
 `;
 
