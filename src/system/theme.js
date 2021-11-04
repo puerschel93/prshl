@@ -1,6 +1,8 @@
 const theme = {
   colors: {
-    green: "red",
+    green: {
+      100: "blue",
+    },
   },
 };
 
