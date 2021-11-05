@@ -6,10 +6,22 @@ import Box from "system/box";
 
 const Main = () => {
   return (
-    <Box width="100vw" height="100vh" bg="black" position="relative">
+    <Box
+      width="100vw"
+      height="100vh"
+      bg="black"
+      position="relative"
+      overflowY="scroll"
+      overflowX="hidden"
+    >
       <Center position="absolute" top="50vh" width="100vw" paddingTop="2rem">
-        <Text color="white" fontSize="4rem" position="absolute" top="-2rem">
-          PRSHL
+        <Text
+          variant="headline"
+          position="absolute"
+          top="-2rem"
+          color="teal.50"
+        >
+          FLØRIAN PRSHL
         </Text>
         <LatestWork />
       </Center>
