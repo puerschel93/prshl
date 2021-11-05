@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import Text from "system/text";
 import Center from "system/center";
 import LatestWork from "components/LatestWork";
