@@ -1,11 +1,15 @@
 import styled from "styled-components";
+import { color, layout, size } from "styled-system";
 
-const Center = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const Center = styled.div(
+  {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  color,
+  layout,
+  size
+);
 
 export default Center;
