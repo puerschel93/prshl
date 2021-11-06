@@ -7,9 +7,9 @@ const theme: Object = {
   fontSizes: {
     xs: "0.5rem",
     sm: "0.75rem",
-    md: "1rem",
-    lg: "1.25rem",
-    xl: "1.5rem",
+    md: "1.25rem",
+    lg: "1.5rem",
+    xl: "1.75rem",
     "2xl": "2rem",
     "3xl": "3rem",
     "4xl": "4rem",

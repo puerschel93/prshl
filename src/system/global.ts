@@ -1,10 +1,12 @@
 import { createGlobalStyle } from "styled-components";
-import IntegralCF from "./fonts/IntegralCF-Bold.woff";
+import IntegralCF from "./fonts/IntegralCF-Regular.woff";
+import IntegralCF2 from "./fonts/IntegralCF-Regular.woff2";
 
 const GlobalStyle = createGlobalStyle`
 	@font-face {
 		font-family: 'IntegralCF';
 		src: url(${IntegralCF}) format('woff');
+			url(${IntegralCF2}) format('woff2');
 		font-weight: bold;
 		font-style: normal;
 	}
