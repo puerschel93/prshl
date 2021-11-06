@@ -1,11 +1,11 @@
-import Center from "system/Center";
+import { Center, Text } from "system/style";
 
 const App = () => {
   console.log(process.env);
 
   return (
     <Center>
-      <div>Hier entsteht das neue Portfolio von Florian Pürschel.</div>
+      <Text>Hier entsteht das neue Portfolio von Florian Pürschel.</Text>
     </Center>
   );
 };

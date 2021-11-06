@@ -2031,6 +2031,13 @@
     "@types/react" "*"
     "csstype" "^3.0.2"
 
+"@types/styled-system@^5.1.13":
+  "integrity" "sha512-RtpV6zXnnMQNcxKjC06BUM4MUER5o9uZ6b7xAc2OzhWxSsmQ3jXyW8ohuXdEJRKypEe0EqAzbSGx2Im0NXfdKA=="
+  "resolved" "https://registry.npmjs.org/@types/styled-system/-/styled-system-5.1.13.tgz"
+  "version" "5.1.13"
+  dependencies:
+    "csstype" "^3.0.2"
+
 "@types/tapable@*", "@types/tapable@^1.0.5":
   "integrity" "sha512-W+bw9ds02rAQaMvaLYxAbJ6cvguW/iJXNT6lTssS1ps6QdrMKttqEAMEG/b5CR8TZl3/L7/lH0ZV5nNR1LXikA=="
   "resolved" "https://registry.npmjs.org/@types/tapable/-/tapable-1.0.6.tgz"
