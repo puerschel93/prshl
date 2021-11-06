@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import IntegralCF from "./Fonts/IntegralCF-Bold.woff";
+import IntegralCF from "./fonts/IntegralCF-Bold.woff";
 
 const GlobalStyle = createGlobalStyle`
 	@font-face {

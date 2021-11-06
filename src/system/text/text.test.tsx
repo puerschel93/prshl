@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import Center from ".";
+import Text from ".";
 
-test("renders a Center component", () => {
-  render(<Center>Sample Text</Center>);
+test("renders a Text component", () => {
+  render(<Text>Sample Text</Text>);
   const linkElement = screen.getByText("Sample Text");
   expect(linkElement).toBeInTheDocument();
 });

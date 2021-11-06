@@ -1,4 +1,4 @@
-import Center from "./Center";
-import Text from "./Text";
+import Center from "./center";
+import Text from "./text";
 
 export { Center, Text };
