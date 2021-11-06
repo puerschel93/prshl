@@ -130,7 +130,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	*::selection {
-		background: white;
+		background-color: white;
 		border-radius: 3px;
 	}
 `;
