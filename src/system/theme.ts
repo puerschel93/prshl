@@ -16,6 +16,14 @@ const theme: Object = {
     "5xl": "5rem",
     "6xl": "6rem",
   },
+  fontWeights: {
+    regular: "400",
+    medium: "500",
+    demibold: "600",
+    bold: "700",
+    extrabold: "800",
+    black: "900",
+  },
 };
 
 export default theme;
