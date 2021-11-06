@@ -1,11 +1,11 @@
 import { Center, Text } from "system/style";
 
 const App = () => {
-  console.log(process.env);
-
   return (
-    <Center>
-      <Text>Hier entsteht das neue Portfolio von Florian Pürschel.</Text>
+    <Center width="100vw" height="100vh" bg="black">
+      <Text color="white" fontSize="3xl" fontWeight="bold">
+        FLÕRIAN PRSHL
+      </Text>
     </Center>
   );
 };
