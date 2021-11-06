@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	*::selection {
-		background: black;
+		background: white;
 	}
 `;
 
