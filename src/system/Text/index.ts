@@ -6,6 +6,7 @@ import {
   SpaceProps,
   color,
   ColorProps,
+  variant,
 } from "styled-system";
 
 interface Props extends SpaceProps, ColorProps, FontSizeProps {
@@ -13,5 +14,10 @@ interface Props extends SpaceProps, ColorProps, FontSizeProps {
 }
 
 const Text = styled.p<Props>(fontSize, space, color);
+
+Text.defaultProps = {
+  fontSize: "1rem",
+  color: "text",
+};
 
 export default Text;
