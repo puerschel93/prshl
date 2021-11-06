@@ -1,6 +1,17 @@
 import styled from "styled-components";
-import { fontSize } from "styled-system";
+import {
+  fontSize,
+  FontSizeProps,
+  space,
+  SpaceProps,
+  color,
+  ColorProps,
+} from "styled-system";
 
-const Text = styled.p(fontSize);
+interface Props extends SpaceProps, ColorProps, FontSizeProps {
+  children: React.ReactNode;
+}
+
+const Text = styled.p<Props>(fontSize, space, color);
 
 export default Text;
