@@ -3,8 +3,8 @@ import Center from ".";
 
 describe("<Center />", () => {
   test("renders a Center component", () => {
-    render(<Center>Sample Text</Center>);
-    const linkElement = screen.getByText("Sample Text");
-    expect(linkElement).toBeInTheDocument();
+    render(<Center data-testid="center">Sample Center</Center>);
+    const element = screen.getByTestId("center");
+    expect(element).toBeInTheDocument();
   });
 });

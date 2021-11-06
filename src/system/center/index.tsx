@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { color, layout, size } from "styled-system";
 import { LayoutProps, ColorProps, SizeProps } from "styled-system";
 
-interface Props extends LayoutProps, ColorProps, SizeProps {
+interface CenterProps extends LayoutProps, ColorProps, SizeProps {
   children: React.ReactNode;
 }
 
-const Center = styled.div<Props>(
+const Center = styled.div<CenterProps>(
   {
     display: "flex",
     justifyContent: "center",

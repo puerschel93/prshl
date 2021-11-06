@@ -10,11 +10,15 @@ import {
   TypographyProps,
 } from "styled-system";
 
-interface Props extends SpaceProps, ColorProps, FontSizeProps, TypographyProps {
+interface TextProps
+  extends SpaceProps,
+    ColorProps,
+    FontSizeProps,
+    TypographyProps {
   children: React.ReactNode;
 }
 
-const Text = styled.p<Props>(fontSize, space, color, typography);
+const Text = styled.p<TextProps>(fontSize, space, color, typography);
 
 Text.defaultProps = {
   fontSize: "md",
