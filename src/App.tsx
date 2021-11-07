@@ -10,7 +10,7 @@ const App = () => {
   });
 
   return (
-    <Center width="100vw" height="100vh" bg="black">
+    <Center width="100vw" height="100vh" position="relative" zIndex={2}>
       <Text
         color="salmon.500"
         fontSize="3xl"

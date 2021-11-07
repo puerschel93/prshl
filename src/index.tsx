@@ -7,6 +7,7 @@ import theme from "system/theme";
 import { ThemeProvider } from "styled-components";
 import Head from "components/Head";
 import { ChakraProvider } from "@chakra-ui/react";
+import BackgroundParticles from "components/Particles";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Head />
         <GlobalStyle />
         <App />
+        <BackgroundParticles />
       </ThemeProvider>
     </ChakraProvider>
   </React.StrictMode>,
