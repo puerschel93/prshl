@@ -3,7 +3,7 @@ import { ISourceOptions } from "tsparticles";
 export const config: ISourceOptions = {
   background: {
     color: {
-      value: "#101010",
+      value: "#0C0C0C",
     },
     position: "50% 50%",
     repeat: "no-repeat",
