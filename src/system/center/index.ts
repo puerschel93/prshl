@@ -7,13 +7,16 @@ import {
   SizeProps,
   position,
   PositionProps,
+  flexbox,
+  FlexboxProps,
 } from "styled-system";
 
 interface CenterProps
   extends LayoutProps,
     ColorProps,
     SizeProps,
-    PositionProps {
+    PositionProps,
+    FlexboxProps {
   children: React.ReactNode;
 }
 
@@ -26,7 +29,8 @@ const Center = styled.div<CenterProps>(
   color,
   layout,
   size,
-  position
+  position,
+  flexbox
 );
 
 export default Center;
