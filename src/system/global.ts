@@ -24,6 +24,7 @@ import IntegralCFMedium from "./fonts/IntegralCF-Medium.woff";
 import IntegralCFMedium2 from "./fonts/IntegralCF-Medium.woff2";
 import IntegralCFMediumOblique from "./fonts/IntegralCF-MediumOblique.woff";
 import IntegralCFMediumOblique2 from "./fonts/IntegralCF-MediumOblique.woff2";
+import Inter from "./fonts/Inter-SemiBold.woff";
 
 const GlobalStyle = createGlobalStyle`
 	@font-face {
@@ -122,6 +123,13 @@ const GlobalStyle = createGlobalStyle`
 		font-style: italic;
 	}
 
+	@font-face {
+		font-family: 'Inter';
+		src: url(${Inter}) format('woff');
+		font-weight: 400;
+		font-style: normal;
+	}
+
 	* {
 		font-family: 'Integral', sans-serif;
 		box-sizing: border-box;
@@ -130,7 +138,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	*::selection {
-		background: white;
+		background-color: white;
 		border-radius: 3px;
 	}
 `;
