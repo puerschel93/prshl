@@ -10,14 +10,18 @@ const App = () => {
   });
 
   return (
-    <Center width="100vw" height="100vh" position="relative" zIndex={2}>
-      <Text
-        color="salmon.500"
-        fontSize="3xl"
-        fontWeight="bold"
-        textShadow="medium"
-      >
+    <Center
+      width="100vw"
+      height="100vh"
+      position="relative"
+      zIndex={2}
+      flexDirection="column"
+    >
+      <Text color="salmon.500" fontSize="3xl" fontWeight="bold">
         {content}
+      </Text>
+      <Text color="white" fontSize="lg" fontWeight="bold" marginTop="1rem">
+        私を雇う
       </Text>
     </Center>
   );
