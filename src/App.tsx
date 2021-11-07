@@ -26,10 +26,11 @@ const App = () => {
       </Text>
 
       <Box
-        width="50vw"
         flexDirection="row"
         justifyContent="center"
-        marginTop="1rem"
+        alignItems="center"
+        position="absolute"
+        bottom="2rem"
       >
         <Link href="https://github.com/puerschel93" mr="1rem">
           Github

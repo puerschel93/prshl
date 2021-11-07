@@ -10,6 +10,8 @@ import {
   FlexboxProps,
   space,
   SpaceProps,
+  color,
+  ColorProps,
 } from "styled-system";
 
 interface BoxProps
@@ -17,12 +19,21 @@ interface BoxProps
     LayoutProps,
     PositionProps,
     FlexboxProps,
-    SpaceProps {
+    SpaceProps,
+    ColorProps {
   children?: React.ReactNode;
 }
 
-const Box = styled.div<BoxProps>(size, layout, position, flexbox, space, {
-  display: "flex",
-});
+const Box = styled.div<BoxProps>(
+  size,
+  layout,
+  position,
+  flexbox,
+  space,
+  color,
+  {
+    display: "flex",
+  }
+);
 
 export default Box;
