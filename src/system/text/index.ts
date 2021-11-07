@@ -2,14 +2,14 @@ import styled from "styled-components";
 import {
   fontSize,
   FontSizeProps,
-  space,
-  SpaceProps,
   color,
   ColorProps,
   typography,
   TypographyProps,
   shadow,
   ShadowProps,
+  space,
+  SpaceProps,
 } from "styled-system";
 
 interface TextProps
