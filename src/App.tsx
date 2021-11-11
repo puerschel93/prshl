@@ -33,7 +33,7 @@ const App = () => {
         bottom="2rem"
       >
         <Link href="https://github.com/puerschel93" mr="1rem">
-          Github
+          GitHub
         </Link>
         <Link href="https://www.linkedin.com/in/puerschel" mr="1rem">
           LinkedIn
