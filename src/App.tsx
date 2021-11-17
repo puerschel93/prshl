@@ -1,13 +1,27 @@
+import { useEffect, useState } from "react";
 import { Center, Text, Box, Link } from "system/style";
 import { useBreakpointValue } from "@chakra-ui/media-query";
+import Content from "components/Content";
+import { subline as sublineArray } from "data/subline";
 
 const App = () => {
+  const [subline, setSubline] = useState(
+    sublineArray[Math.floor(Math.random() * sublineArray.length)]
+  );
+
   const content = useBreakpointValue({
     base: "PRSHL",
     md: "FLRN PRSHL",
     lg: "FLORIAN PRSHL",
     xl: "FLORIAN PŪRSCHEL",
   });
+
+  useEffect(() => {
+    const sublineInterval = setInterval(() => {
+      setSubline(sublineArray[Math.floor(Math.random() * sublineArray.length)]);
+    }, 5000);
+    return () => clearInterval(sublineInterval);
+  }, []);
 
   return (
     <Center
@@ -16,20 +30,24 @@ const App = () => {
       position="relative"
       zIndex={2}
       flexDirection="column"
+      overflowY="scroll"
     >
-      <Text color="salmon.300" fontSize="3xl" fontWeight="bold">
-        {content}
-      </Text>
+      <Center position="relative" flexDirection="column" width="35vw">
+        <Text color="salmon.300" fontSize="3xl" fontWeight="bold">
+          {content}
+        </Text>
 
-      <Text color="white" fontSize="lg" fontWeight="bold" marginTop="1rem">
-        私を雇う
-      </Text>
+        <Text color="white" fontSize="lg" fontWeight="bold" marginTop="1rem">
+          {subline}
+        </Text>
+        <Content />
+      </Center>
 
       <Box
         flexDirection="row"
         justifyContent="center"
         alignItems="center"
-        position="absolute"
+        position="fixed"
         bottom="2rem"
       >
         <Link href="https://github.com/puerschel93" mr="1rem">
