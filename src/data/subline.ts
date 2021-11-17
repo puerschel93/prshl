@@ -1,0 +1,17 @@
+export const subline = [
+  "私を雇う",
+  "Pasamdyk mane",
+  "Karama aho",
+  "Engagez moi",
+  "Beni işe al",
+  "Najmout mě",
+  "Assumimi",
+  "Ráddu mig",
+  "وظفني",
+  "Stellt mich ein",
+  "Ansæt mig",
+  "Palka mind",
+  "Palkkaa minut",
+  "Anställ mig",
+  "Ansette meg",
+];
