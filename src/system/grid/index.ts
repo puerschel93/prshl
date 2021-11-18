@@ -2,17 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { color, layout, size } from "styled-system";
 import {
-  LayoutProps,
+  GridProps,
+  grid,
   ColorProps,
   SizeProps,
   position,
   PositionProps,
-  flexbox,
-  FlexboxProps,
   space,
   SpaceProps,
   border,
   BorderProps,
+  LayoutProps,
 } from "styled-system";
 
 interface FlexProps
@@ -20,15 +20,25 @@ interface FlexProps
     ColorProps,
     SizeProps,
     PositionProps,
-    FlexboxProps,
+    GridProps,
     SpaceProps,
     BorderProps {
   children: React.ReactNode;
   spacing?: number;
+  spacingX?: number;
+  spacingY?: number;
 }
 
 const spacing = (props: FlexProps) => `
-  gap: ${mapSpacing(props.spacing)};
+  grid-gap: ${mapSpacing(props.spacing)};
+`;
+
+const spacingX = (props: FlexProps) => `
+  column-gap: ${mapSpacing(props.spacingX)};
+`;
+
+const spacingY = (props: FlexProps) => `
+  row-gap: ${mapSpacing(props.spacingY)};
 `;
 
 const mapSpacing = (spacing?: number): string => {
@@ -47,18 +57,21 @@ const mapSpacing = (spacing?: number): string => {
   else return "9rem";
 };
 
-const Flex = styled.div<FlexProps>(
+const Grid = styled.div<FlexProps>(
   {
-    display: "flex",
+    display: "grid",
+    width: "100%",
   },
   spacing,
+  spacingX,
+  spacingY,
   color,
   layout,
   size,
   position,
-  flexbox,
+  grid,
   space,
   border
 );
 
-export default Flex;
+export default Grid;

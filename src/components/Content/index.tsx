@@ -21,13 +21,11 @@ const Content = () => {
         alignItems="flex-start"
         pb="12.5rem"
       >
-        <Work />
-        <Work />
-        <Work />
-        <Work />
-        <Work />
-        <Work />
-        <Work />
+        {Array(30)
+          .fill(1)
+          .map((id, index) => (
+            <Work index={index} />
+          ))}
       </Flex>
     </Flex>
   );

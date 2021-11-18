@@ -16,6 +16,13 @@ const App = () => {
     xl: "FLORIAN PŪRSCHEL",
   });
 
+  const contentWidth = useBreakpointValue({
+    base: "90vw",
+    md: "80vw",
+    lg: "50vw",
+    xl: "35vw",
+  });
+
   useEffect(() => {
     const sublineInterval = setInterval(() => {
       setSubline(sublineArray[Math.floor(Math.random() * sublineArray.length)]);
@@ -32,7 +39,12 @@ const App = () => {
       flexDirection="column"
       overflowY="scroll"
     >
-      <Center position="relative" flexDirection="column" width="35vw">
+      <Center
+        position="relative"
+        flexDirection="column"
+        width={contentWidth}
+        style={{ transition: "1s" }}
+      >
         <Text color="salmon.300" fontSize="3xl" fontWeight="bold">
           {content}
         </Text>
