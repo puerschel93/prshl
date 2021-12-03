@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
-import { Center, Text, Box, Link } from "system/style";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import Content from "components/Content";
-import { subline as sublineArray } from "data/subline";
+import { Box, Center, Link, Text } from "system/style";
 
 const App = () => {
-  const [subline, setSubline] = useState(
-    sublineArray[Math.floor(Math.random() * sublineArray.length)]
-  );
+  const subline = useBreakpointValue({
+    base: "Maker",
+    md: "Developer and Maker.",
+    lg: "Developer, Designer and Maker",
+    xl: "Fullstack Developer, Designer and Maker",
+  });
 
   const content = useBreakpointValue({
     base: "PRSHL",
@@ -22,14 +23,6 @@ const App = () => {
     lg: "50vw",
     xl: "35vw",
   });
-
-  useEffect(() => {
-    const sublineInterval = setInterval(() => {
-      setSubline(sublineArray[Math.floor(Math.random() * sublineArray.length)]);
-    }, 5000);
-    return () => clearInterval(sublineInterval);
-  }, []);
-
   return (
     <Center
       width="100vw"
@@ -49,7 +42,7 @@ const App = () => {
           {content}
         </Text>
 
-        <Text color="white" fontSize="lg" fontWeight="bold" marginTop="1rem">
+        <Text color="white" fontSize="md" fontWeight="bold" marginTop="1rem">
           {subline}
         </Text>
         <Content />

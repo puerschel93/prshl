@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "prshl-73c00"
+    "default": "prshl-73c00",
+    "staging": "prshl-73c00"
   }
 }

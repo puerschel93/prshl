@@ -1,5 +1,5 @@
-import { Flex, Text } from "system/style";
 import Work from "components/Work";
+import { Flex, Text } from "system/style";
 
 const Content = () => {
   return (
