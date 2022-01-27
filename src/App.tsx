@@ -1,13 +1,12 @@
 import { useBreakpointValue } from "@chakra-ui/media-query";
-import Content from "components/Content";
 import { Box, Center, Link, Text } from "system/style";
 
 const App = () => {
   const subline = useBreakpointValue({
-    base: "Maker",
-    md: "Developer and Maker.",
-    lg: "Developer, Designer and Maker",
-    xl: "Fullstack Developer, Designer and Maker",
+    base: "DEV & DESIGNER",
+    md: "JR. DEV & DESIGNER",
+    lg: "JR. DEVELOPER & DESIGNER",
+    xl: "JR. FULLSTACK DEVELOPER & DESIGNER",
   });
 
   const content = useBreakpointValue({
@@ -45,7 +44,7 @@ const App = () => {
         <Text color="white" fontSize="md" fontWeight="bold" marginTop="1rem">
           {subline}
         </Text>
-        <Content />
+        {/** <Content /> */}
       </Center>
 
       <Box
