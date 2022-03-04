@@ -1,8 +1,8 @@
-import Helmet from "react-helmet";
-import x32 from "graphics/favicon-32x32.png";
-import x16 from "graphics/favicon-16x16.png";
-import xAp from "graphics/apple-touch-icon.png";
 import { useBreakpointValue } from "@chakra-ui/media-query";
+import xAp from "graphics/apple-touch-icon.png";
+import x16 from "graphics/favicon-16x16.png";
+import x32 from "graphics/favicon-32x32.png";
+import Helmet from "react-helmet";
 
 const Head = () => {
   const title = useBreakpointValue({

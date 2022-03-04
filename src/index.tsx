@@ -1,13 +1,12 @@
+import { ChakraProvider } from "@chakra-ui/react";
+import Head from "components/Head";
+import BackgroundParticles from "components/Particles";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "styled-components";
 import GlobalStyle from "system/global";
 import theme from "system/theme";
-import { ThemeProvider } from "styled-components";
-import Head from "components/Head";
-import { ChakraProvider } from "@chakra-ui/react";
-import BackgroundParticles from "components/Particles";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,5 +21,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-reportWebVitals();

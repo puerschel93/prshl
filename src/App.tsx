@@ -22,6 +22,7 @@ const App = () => {
     lg: "50vw",
     xl: "35vw",
   });
+
   return (
     <Center
       width="100vw"

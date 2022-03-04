@@ -1,4 +1,4 @@
-import { Text, Grid } from "system/style";
+import { Grid, Text } from "system/style";
 
 const Work = (props: any) => {
   return (
