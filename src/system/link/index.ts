@@ -8,16 +8,10 @@ import {
   SpaceProps,
 } from "styled-system";
 
+/** Props Interface */
 interface LinkProps extends FontSizeProps, ColorProps, SpaceProps {
   children?: React.ReactNode;
 }
 
-export const Link = styled.a<LinkProps>(fontSize, color, space, {
-  textDecoration: "none",
-  opacity: 0.5,
-  fontFamily: '"Inter", sans-serif',
-  transition: "all 0.05s ease-in-out",
-  "&:hover": {
-    opacity: 1,
-  },
-});
+/** Styled Link */
+export const Link = styled.a<LinkProps>(fontSize, color, space);

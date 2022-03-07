@@ -13,6 +13,7 @@ import {
   SizeProps,
 } from "styled-system";
 
+/** Props Interface */
 interface CenterProps
   extends LayoutProps,
     ColorProps,
@@ -22,18 +23,21 @@ interface CenterProps
   children?: React.ReactNode;
 }
 
+/** Styled Center */
 export const Center = styled.div<CenterProps>(
-  {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "black",
-  },
   color,
   layout,
   size,
   position,
   flexbox
 );
+
+/** Default Props */
+Center.defaultProps = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "100vw",
+  height: "100vh",
+  backgroundColor: "black",
+};

@@ -17,6 +17,7 @@ import {
   SpaceProps,
 } from "styled-system";
 
+/** Props Interface */
 interface FlexProps
   extends LayoutProps,
     ColorProps,
@@ -31,11 +32,8 @@ interface FlexProps
   spacingY?: number;
 }
 
+/** Styled Grid */
 export const Grid = styled.div<FlexProps>(
-  {
-    display: "grid",
-    width: "100%",
-  },
   color,
   layout,
   size,

@@ -17,6 +17,7 @@ import {
   SpaceProps,
 } from "styled-system";
 
+/** Props Interface */
 interface FlexProps
   extends LayoutProps,
     ColorProps,
@@ -29,10 +30,8 @@ interface FlexProps
   spacing?: number;
 }
 
+/** Styled Flex */
 export const Flex = styled.div<FlexProps>(
-  {
-    display: "flex",
-  },
   color,
   layout,
   size,

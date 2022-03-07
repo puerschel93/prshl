@@ -14,6 +14,7 @@ import {
   SpaceProps,
 } from "styled-system";
 
+/** Props Interface */
 interface BoxProps
   extends SizeProps,
     LayoutProps,
@@ -24,14 +25,17 @@ interface BoxProps
   children?: React.ReactNode;
 }
 
+/** Styled Box */
 export const Box = styled.div<BoxProps>(
   size,
   layout,
   position,
   flexbox,
   space,
-  color,
-  {
-    display: "flex",
-  }
+  color
 );
+
+/** Default Props */
+Box.defaultProps = {
+  display: "flex",
+};

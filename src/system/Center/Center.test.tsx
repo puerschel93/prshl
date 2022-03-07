@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Center from ".";
+import { Center } from ".";
 
 describe("<Center />", () => {
   test("renders a Center component", () => {

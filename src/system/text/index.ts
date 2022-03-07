@@ -12,6 +12,7 @@ import {
   TypographyProps,
 } from "styled-system";
 
+/** Props Interface */
 interface TextProps
   extends SpaceProps,
     ShadowProps,
@@ -21,6 +22,7 @@ interface TextProps
   children: React.ReactNode;
 }
 
+/** Styled Text */
 export const Text = styled.p<TextProps>(
   fontSize,
   space,
@@ -29,6 +31,7 @@ export const Text = styled.p<TextProps>(
   shadow
 );
 
+/** Default Props */
 Text.defaultProps = {
   fontSize: "md",
   fontWeight: "medium",

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Box from ".";
+import { Box } from ".";
 
 describe("<Box />", () => {
   test("renders a Box component", () => {
