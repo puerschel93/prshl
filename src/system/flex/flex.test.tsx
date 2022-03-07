@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import { Flex } from ".";
+import { Flex } from "./flex";
 
 describe("<Flex />", () => {
   test("renders a Flex component", () => {

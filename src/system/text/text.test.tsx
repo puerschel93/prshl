@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import { Text } from ".";
+import { Text } from "./text";
 
 describe("<Text />", () => {
   test("renders a Text component", () => {

@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import { Grid } from ".";
+import { Grid } from "./grid";
 
 describe("<Grid />", () => {
   test("renders a Grid component", () => {

@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import { Center } from ".";
+import { Center } from "./center";
 
 describe("<Center />", () => {
   test("renders a Center component", () => {

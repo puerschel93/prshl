@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import { Link } from ".";
+import { Link } from "./link";
 
 describe("<Link />", () => {
   test("renders a Link component", () => {

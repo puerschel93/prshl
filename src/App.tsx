@@ -1,5 +1,9 @@
-import { Center } from "system/style";
+import { Center, Text } from "system/style";
 
 export const App = () => {
-  return <Center></Center>;
+  return (
+    <Center>
+      <Text>Florian Tim</Text>
+    </Center>
+  );
 };
