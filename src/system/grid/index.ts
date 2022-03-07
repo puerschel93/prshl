@@ -26,7 +26,7 @@ interface FlexProps
     GridProps,
     SpaceProps,
     BorderProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   spacing?: number;
   spacingX?: number;
   spacingY?: number;
