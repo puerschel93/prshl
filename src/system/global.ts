@@ -1,9 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-
-import IntegralCFRegular from "./fonts/IntegralCF-Regular.woff";
-import IntegralCFRegular2 from "./fonts/IntegralCF-Regular.woff2";
-import IntegralCFRegularOblique from "./fonts/IntegralCF-RegularOblique.woff";
-import IntegralCFRegularOblique2 from "./fonts/IntegralCF-RegularOblique.woff2";
 import IntegralCFBold from "./fonts/IntegralCF-Bold.woff";
 import IntegralCFBold2 from "./fonts/IntegralCF-Bold.woff2";
 import IntegralCFBoldOblique from "./fonts/IntegralCF-BoldOblique.woff";
@@ -24,6 +19,10 @@ import IntegralCFMedium from "./fonts/IntegralCF-Medium.woff";
 import IntegralCFMedium2 from "./fonts/IntegralCF-Medium.woff2";
 import IntegralCFMediumOblique from "./fonts/IntegralCF-MediumOblique.woff";
 import IntegralCFMediumOblique2 from "./fonts/IntegralCF-MediumOblique.woff2";
+import IntegralCFRegular from "./fonts/IntegralCF-Regular.woff";
+import IntegralCFRegular2 from "./fonts/IntegralCF-Regular.woff2";
+import IntegralCFRegularOblique from "./fonts/IntegralCF-RegularOblique.woff";
+import IntegralCFRegularOblique2 from "./fonts/IntegralCF-RegularOblique.woff2";
 import Inter from "./fonts/Inter-SemiBold.woff";
 
 const GlobalStyle = createGlobalStyle`
