@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import {
-  size,
-  SizeProps,
+  color,
+  ColorProps,
+  flexbox,
+  FlexboxProps,
   layout,
   LayoutProps,
   position,
   PositionProps,
-  flexbox,
-  FlexboxProps,
+  size,
+  SizeProps,
   space,
   SpaceProps,
-  color,
-  ColorProps,
 } from "styled-system";
 
 interface BoxProps
@@ -24,7 +24,7 @@ interface BoxProps
   children?: React.ReactNode;
 }
 
-const Box = styled.div<BoxProps>(
+export const Box = styled.div<BoxProps>(
   size,
   layout,
   position,
@@ -35,5 +35,3 @@ const Box = styled.div<BoxProps>(
     display: "flex",
   }
 );
-
-export default Box;

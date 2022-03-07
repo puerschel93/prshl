@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { color, layout, size } from "styled-system";
 import {
-  LayoutProps,
+  color,
   ColorProps,
-  SizeProps,
-  position,
-  PositionProps,
   flexbox,
   FlexboxProps,
+  layout,
+  LayoutProps,
+  position,
+  PositionProps,
+  size,
+  SizeProps,
 } from "styled-system";
 
 interface CenterProps
@@ -17,10 +19,10 @@ interface CenterProps
     SizeProps,
     PositionProps,
     FlexboxProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
-const Center = styled.div<CenterProps>(
+export const Center = styled.div<CenterProps>(
   {
     display: "flex",
     justifyContent: "center",
@@ -32,5 +34,3 @@ const Center = styled.div<CenterProps>(
   position,
   flexbox
 );
-
-export default Center;

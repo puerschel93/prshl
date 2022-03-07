@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import {
-  fontSize,
-  FontSizeProps,
   color,
   ColorProps,
-  typography,
-  TypographyProps,
+  fontSize,
+  FontSizeProps,
   shadow,
   ShadowProps,
   space,
   SpaceProps,
+  typography,
+  TypographyProps,
 } from "styled-system";
 
 interface TextProps
@@ -21,11 +21,15 @@ interface TextProps
   children: React.ReactNode;
 }
 
-const Text = styled.p<TextProps>(fontSize, space, color, typography, shadow);
+export const Text = styled.p<TextProps>(
+  fontSize,
+  space,
+  color,
+  typography,
+  shadow
+);
 
 Text.defaultProps = {
   fontSize: "md",
   fontWeight: "medium",
 };
-
-export default Text;

@@ -12,7 +12,7 @@ interface LinkProps extends FontSizeProps, ColorProps, SpaceProps {
   children?: React.ReactNode;
 }
 
-const Link = styled.a<LinkProps>(fontSize, color, space, {
+export const Link = styled.a<LinkProps>(fontSize, color, space, {
   textDecoration: "none",
   opacity: 0.5,
   fontFamily: '"Inter", sans-serif',
@@ -21,11 +21,3 @@ const Link = styled.a<LinkProps>(fontSize, color, space, {
     opacity: 1,
   },
 });
-
-Link.defaultProps = {
-  fontSize: "sm",
-  color: "white",
-  target: "_blank",
-};
-
-export default Link;

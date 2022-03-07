@@ -1,6 +1,3 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import Head from "components/Head";
-import BackgroundParticles from "components/Particles";
 import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
@@ -10,14 +7,10 @@ import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <ThemeProvider theme={theme}>
-        <Head />
-        <GlobalStyle />
-        <App />
-        <BackgroundParticles />
-      </ThemeProvider>
-    </ChakraProvider>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
